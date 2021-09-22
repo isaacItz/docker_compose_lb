@@ -36,7 +36,7 @@ services:
 
 6) Vamos a probar a crear la apliación en 2 contenedores con el comando `docker-compose up` y ver qué pasa:
 > docker-compose up -d --scale web=2
-* Es normal que aparezca un error porque no tenemos recursos para ejecutar más de un servicio web en GitPod
+* Tenemos dos contenedores detrás del balanceador de carga, así que cada llamada cambiará el nombre del contenedor
 
 
 ## Parada del contenedor Docker Compose de Python/Flask y un balanceador de carga (Load Balancer)
