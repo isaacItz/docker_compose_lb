@@ -40,7 +40,8 @@ services:
 
 
 ## Parada del contenedor Docker Compose de Python/Flask y un balanceador de carga (Load Balancer)
-Para parar un contenedor en ejecución, primero hemos de saber el ID de dicho contenedor con el comando `docker ps`. Una vez averiguado, podemos pararlo con `docker stop`:
-> docker ps
+Para parar un contenedor en ejecución, primero hemos de saber el ID de dicho contenedor con el comando `docker ps`. Una vez averiguado, podemos pararlo con `docker stop`. Pero ahora hay 4 contenedores para apagar.... o utilizar el comando `docker-compose stop`:
+> docker-compose stop
 
-> docker stop XXXXXXXXXXXX
+Si queremos además borrar los volúmenes:
+> docker-compose down -v
